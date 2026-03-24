@@ -56,10 +56,14 @@ async def handle_message(message: types.Message):
         if user_id not in user_state or "subject" not in user_state[user_id]:
             await message.answer("📚 Fan tanlang:", reply_markup=subject_menu())
         elif "quarter" not in user_state[user_id]:
+            # subjectni ham o‘chirib, bosh menyuga qaytamiz
+            user_state.pop(user_id, None)
+            await message.answer("📚 Fan tanlang:", reply_markup=subject_menu())
+        else:
+            # faqat quarterni o‘chirib, subject menyusiga qaytamiz
+            user_state[user_id].pop("quarter", None)
             subject = user_state[user_id]["subject"]
             await message.answer("📖 Chorak tanlang:", reply_markup=quarter_menu(subject))
-        else:
-            await message.answer("✅ Tayyor bo‘lsang, testni boshlash tugmasini bos!", reply_markup=start_quiz_menu())
         return
 
     if text in questions.keys():
@@ -93,7 +97,7 @@ async def send_question(chat_id, user_id):
             options=q["options"],
             type="quiz",
             correct_option_id=q["options"].index(q["answer"]),
-            is_anonymous=True
+            is_anonymous=False   # ✅ endi foydalanuvchi ID qaytadi
         )
     else:
         await bot.send_message(chat_id, f"🏁 Test tugadi!\nNatija: {state['score']} / {len(q_list)}")
