@@ -1,0 +1,167 @@
+{
+  "fizika": {
+    "1-chorak": [
+      {
+        "question": "kuzatilayotgan vaziyatda o'lchami va shaklini hisobga olmasa ham bo'ladigan jismga nima deyiladi?",
+        "options": ["Sanoq jism", "Moddiy nuqta", "Yo'l", "Trayektoriya"],
+        "answer": "Moddiy nuqta"
+      },
+      {
+        "question": "Skalyar kattalik misoliga qaysi biri kiradi?",
+        "options": ["Tezlik", "Kuch", "Masofa", "Tezlanish"],
+        "answer": "Masofa"
+      },
+      {
+        "question": "Avtobus 2 soatda 90km yo'l bosib o'tdi. Uning tezligini aniqlang (km/h)",
+        "options": ["30", "45", "60", "72"],
+        "answer": "45"
+      },
+      {
+        "question": "2 minutda 300 marta aylanayotgan ventilyator parragining aylanish chastotasini toping.",
+        "options": ["2.5", "0.4", "40", "0.8"],
+        "answer": "2.5"
+      },
+      {
+        "question": "velosipedchi birinch 3s da 15m so'ng 7s da 35m yo'l bosdi. Velosipedchining o'rtacha tezligini aniqlang",
+        "options": ["3", "5", "7", "10"],
+        "answer": "5"
+      },
+      {
+        "question": "Sinf xonasining o'lchamlari eni 8m, bo'yi 15m va balandligi 3m ga teng. Agar havoning zichligin ,29kg/m3 bo'lsa, xonadagi havoning massasi (kg) ni hisoblang",
+        "options": ["389.5", "424.6", "196.8", "464.4"],
+        "answer": "464.4"
+      },
+      {
+        "question": "Sngan deraza oynasining kichikroq bo'lakchasi taroziga qo'yilganda massasi 1.06 gramm ekanligi aniqlandi, uni SI xalqaro sistemada ifodalang",
+        "options": ["0,00106 kg", "1060 mg", "1060000 Mg", "0,000000106 t"],
+        "answer": "0,00106 kg"
+      },
+      {
+        "question": "Velosipedchi 1800m yo'lni 6minda bosib o'tdi. Tezligini aniqlng (m/s)",
+        "options": ["5", "6", "7", "8"],
+        "answer": "5"
+      },
+      {
+        "question": "Velosipedchi birinchi 4s davomida 40m, so'ng 8s ichida 110m va nhoyat yana 6s ichida 30m yo'l bosib o'tdi. O'rtacha tezlikni aniqlang.",
+        "options": ["5", "10", "15", "20"],
+        "answer": "10"
+      },
+      {
+        "question": "2minda 300 marta aylanayotgan ventiliator parragining aylanish davri (s) ni toping",
+        "options": ["150", "0,4", "40", "0,8"],
+        "answer": "0,4"
+      }
+    ],
+    "2-chorak": [
+      {
+        "question": "massa birligi nima?",
+        "options": ["metr", "kilogramm", "sekund", "nyuton"],
+        "answer": "kilogramm"
+      },
+      {
+        "question": "ρ = 1000, V = 2 m³. Massa?",
+        "options": ["500", "2000", "1000", "3000"],
+        "answer": "2000"
+      },
+      {
+        "question": "m = 10 kg, g ≈ 10. Og‘irlik kuchi?",
+        "options": ["10N", "50N", "100N", "200N"],
+        "answer": "100N"
+      },
+      {
+        "question": "ρ = 500, m = 1000 kg. Hajm?",
+        "options": ["2m³", "5m³", "10m³", "1m³"],
+        "answer": "2m³"
+      },
+      {
+        "question": "m = 5 kg, g = 10. Og‘irlik?",
+        "options": ["5N", "10N", "50N", "100N"],
+        "answer": "50N"
+      },
+      {
+        "question": "ρ = 800, V = 1 m³. Massa?",
+        "options": ["800", "80", "8", "1600"],
+        "answer": "800"
+      },
+      {
+        "question": "2000 kg massali jism og‘irligi? (g=10)",
+        "options": ["2000N", "1000N", "20000N", "500N"],
+        "answer": "20000N"
+      },
+      {
+        "question": "ρ = 1000, m = 500. Hajm?",
+        "options": ["0,5", "5", "1", "2"],
+        "answer": "0,5"
+      },
+      {
+        "question": "ρ = 2, V = 3. Massa?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "2000"
+      },
+      {
+        "question": "m = 1 kg. Og‘irlik? (g=10)",
+        "options": ["1N", "5N", "10N", "20N"],
+        "answer": "20N"
+      }
+    ],
+    "3-chorak": [
+      {
+        "question": "F = 10 N, S = 2 m². Bosim?",
+        "options": ["5Pa", "10Pa", "20Pa", "2Pa"],
+        "answer": "5Pa"
+      },
+      {
+        "question": "F = 20 N, s = 5 m. Ish?",
+        "options": ["25J", "50J", "100J", "10J"],
+        "answer": "100J"
+      },
+      {
+        "question": "F = 100 N, S = 10. Bosim?",
+        "options": ["5", "10", "20", "50"],
+        "answer": "10"
+      },
+      {
+        "question": "A = 200 J, s = 10 m. Kuch?",
+        "options": ["20N", "10N", "5N", "50N"],
+        "answer": "20N"
+      },
+      {
+        "question": "F = 50 N, s = 2 m. Ish?",
+        "options": ["100J", "50J", "25J", "10J"],
+        "answer": "100J"
+      },
+      {
+        "question": "F = 30 N, S = 3. Bosim?",
+        "options": ["10Pa", "5Pa", "15Pa", "20Pa"],
+        "answer": "10Pa"
+      },
+      {
+        "question": "A = 60 J, F = 10 N. Yo‘l?",
+        "options": ["6m", "5m", "10m", "3m"],
+        "answer": "6m"
+      },
+      {
+        "question": "F = 80 N, s = 1 m. Ish?",
+        "options": ["80J", "40J", "20J", "10J"],
+        "answer": "80J"
+      },
+      {
+        "question": "F = 100 N, S = 5. Bosim?",
+        "options": ["10", "20", "5", "50"],
+        "answer": "20"
+      },
+      {
+        "question": "A = 150 J, s = 5. Kuch?",
+        "options": ["10", "20", "30", "50"],
+        "answer": "30"
+      }
+    ],
+    "4-chorak": [
+      {
+        "question": "Tenglamani yeching: v = v0 + at, agar v0=0, a=2 m/s², t=5 s",
+        "options": ["v=5 m/s", "v=10 m/s", "v=15 m/s", "v=20 m/s"],
+        "answer": "v=10 m/s"
+      }
+    ]
+  }
+}
