@@ -132,9 +132,20 @@ async def main():
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
+import threading
+
+async def main():
+    await bot.delete_webhook(drop_pending_updates=True)
+    await dp.start_polling(bot)
+
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    loop.create_task(main())
-    # Render bergan PORT qiymatini avtomatik olamiz
-    port = int(os.getenv("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    # Flask serverni alohida oqimda ishga tushiramiz
+    def run_flask():
+        port = int(os.getenv("PORT", 10000))
+        app.run(host="0.0.0.0", port=port)
+
+    flask_thread = threading.Thread(target=run_flask)
+    flask_thread.start()
+
+    # Aiogram pollingni asosiy oqimda ishga tushiramiz
+    asyncio.run(main())
