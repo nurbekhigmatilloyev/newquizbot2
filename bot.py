@@ -1,12 +1,13 @@
 import json
 import os
 import asyncio
+import threading
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from flask import Flask
 
-# Token environment’dan olinadi
+# Token environment’dan olinadi (Render’da BOT_TOKEN qo‘yish kerak!)
 TOKEN = "8715707489:AAHRQEmB-v977wIUWtNIgrAtnnfsX0fFP0g"
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -26,24 +27,21 @@ with open("questions.json", "r", encoding="utf-8") as f:
 user_state = {}
 
 def subject_menu():
-    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    for subject in questions.keys():
-        keyboard.add(KeyboardButton(subject))
-    keyboard.add(KeyboardButton("◀️ Ortga qaytish"))
-    return keyboard
+    keyboard = [[KeyboardButton(subject)] for subject in questions.keys()]
+    keyboard.append([KeyboardButton("◀️ Ortga qaytish")])
+    return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
 def quarter_menu(subject):
-    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    for quarter in questions[subject].keys():
-        keyboard.add(KeyboardButton(quarter))
-    keyboard.add(KeyboardButton("◀️ Ortga qaytish"))
-    return keyboard
+    keyboard = [[KeyboardButton(quarter)] for quarter in questions[subject].keys()]
+    keyboard.append([KeyboardButton("◀️ Ortga qaytish")])
+    return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
 def start_quiz_menu():
-    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    keyboard.add(KeyboardButton("🚀 Testni boshlash"))
-    keyboard.add(KeyboardButton("◀️ Ortga qaytish"))
-    return keyboard
+    keyboard = [
+        [KeyboardButton("🚀 Testni boshlash")],
+        [KeyboardButton("◀️ Ortga qaytish")]
+    ]
+    return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
 @dp.message(Command("start"))
 async def start(message: types.Message):
@@ -123,16 +121,6 @@ async def handle_poll_answer(poll_answer: types.PollAnswer):
     state["index"] += 1
     chat_id = state["chat_id"]
     await send_question(chat_id, user_id)
-
-async def main():
-    await bot.delete_webhook(drop_pending_updates=True)
-    await dp.start_polling(bot)
-
-async def main():
-    await bot.delete_webhook(drop_pending_updates=True)
-    await dp.start_polling(bot)
-
-import threading
 
 async def main():
     await bot.delete_webhook(drop_pending_updates=True)
