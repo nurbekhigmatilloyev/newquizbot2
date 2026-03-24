@@ -27,19 +27,19 @@ with open("questions.json", "r", encoding="utf-8") as f:
 user_state = {}
 
 def subject_menu():
-    keyboard = [[KeyboardButton(subject)] for subject in questions.keys()]
-    keyboard.append([KeyboardButton("◀️ Ortga qaytish")])
+    keyboard = [[KeyboardButton(text=subject)] for subject in questions.keys()]
+    keyboard.append([KeyboardButton(text="◀️ Ortga qaytish")])
     return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
 def quarter_menu(subject):
-    keyboard = [[KeyboardButton(quarter)] for quarter in questions[subject].keys()]
-    keyboard.append([KeyboardButton("◀️ Ortga qaytish")])
+    keyboard = [[KeyboardButton(text=quarter)] for quarter in questions[subject].keys()]
+    keyboard.append([KeyboardButton(text="◀️ Ortga qaytish")])
     return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
 def start_quiz_menu():
     keyboard = [
-        [KeyboardButton("🚀 Testni boshlash")],
-        [KeyboardButton("◀️ Ortga qaytish")]
+        [KeyboardButton(text="🚀 Testni boshlash")],
+        [KeyboardButton(text="◀️ Ortga qaytish")]
     ]
     return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
