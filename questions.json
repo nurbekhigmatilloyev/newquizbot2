@@ -1,167 +1,154 @@
 {
-  "fizika": {
+  "Matematika": {
     "1-chorak": [
-      {
-        "question": "kuzatilayotgan vaziyatda o'lchami va shaklini hisobga olmasa ham bo'ladigan jismga nima deyiladi?",
-        "options": ["Sanoq jism", "Moddiy nuqta", "Yo'l", "Trayektoriya"],
-        "answer": "Moddiy nuqta"
-      },
-      {
-        "question": "Skalyar kattalik misoliga qaysi biri kiradi?",
-        "options": ["Tezlik", "Kuch", "Masofa", "Tezlanish"],
-        "answer": "Masofa"
-      },
-      {
-        "question": "Avtobus 2 soatda 90km yo'l bosib o'tdi. Uning tezligini aniqlang (km/h)",
-        "options": ["30", "45", "60", "72"],
-        "answer": "45"
-      },
-      {
-        "question": "2 minutda 300 marta aylanayotgan ventilyator parragining aylanish chastotasini toping.",
-        "options": ["2.5", "0.4", "40", "0.8"],
-        "answer": "2.5"
-      },
-      {
-        "question": "velosipedchi birinch 3s da 15m so'ng 7s da 35m yo'l bosdi. Velosipedchining o'rtacha tezligini aniqlang",
-        "options": ["3", "5", "7", "10"],
-        "answer": "5"
-      },
-      {
-        "question": "Sinf xonasining o'lchamlari eni 8m, bo'yi 15m va balandligi 3m ga teng. Agar havoning zichligin ,29kg/m3 bo'lsa, xonadagi havoning massasi (kg) ni hisoblang",
-        "options": ["389.5", "424.6", "196.8", "464.4"],
-        "answer": "464.4"
-      },
-      {
-        "question": "Sngan deraza oynasining kichikroq bo'lakchasi taroziga qo'yilganda massasi 1.06 gramm ekanligi aniqlandi, uni SI xalqaro sistemada ifodalang",
-        "options": ["0,00106 kg", "1060 mg", "1060000 Mg", "0,000000106 t"],
-        "answer": "0,00106 kg"
-      },
-      {
-        "question": "Velosipedchi 1800m yo'lni 6minda bosib o'tdi. Tezligini aniqlng (m/s)",
-        "options": ["5", "6", "7", "8"],
-        "answer": "5"
-      },
-      {
-        "question": "Velosipedchi birinchi 4s davomida 40m, so'ng 8s ichida 110m va nhoyat yana 6s ichida 30m yo'l bosib o'tdi. O'rtacha tezlikni aniqlang.",
-        "options": ["5", "10", "15", "20"],
-        "answer": "10"
-      },
-      {
-        "question": "2minda 300 marta aylanayotgan ventiliator parragining aylanish davri (s) ni toping",
-        "options": ["150", "0,4", "40", "0,8"],
-        "answer": "0,4"
-      }
+      {"question": "(-5) + 8 = ?", "options": ["3","-3","13","-13"], "answer": "3"},
+      {"question": "7 - (-4) = ?", "options": ["3","11","-11","-3"], "answer": "11"},
+      {"question": "-6 + (-9) = ?", "options": ["-15","15","-3","3"], "answer": "-15"},
+      {"question": "12 - 20 = ?", "options": ["-8","8","32","-32"], "answer": "-8"},
+      {"question": "|-15| = ?", "options": ["-15","15","0","1"], "answer": "15"},
+      {"question": "(-3) × 7 = ?", "options": ["-21","21","-10","10"], "answer": "-21"},
+      {"question": "(-24) ÷ 6 = ?", "options": ["-4","4","-30","30"], "answer": "-4"},
+      {"question": "(-2)^3 = ?", "options": ["-8","8","-6","6"], "answer": "-8"},
+      {"question": "3^3 = ?", "options": ["6","9","27","81"], "answer": "27"},
+      {"question": "(-10)+25-5 = ?", "options": ["10","15","20","-10"], "answer": "10"}
     ],
     "2-chorak": [
-      {
-        "question": "massa birligi nima?",
-        "options": ["metr", "kilogramm", "sekund", "nyuton"],
-        "answer": "kilogramm"
-      },
-      {
-        "question": "ρ = 1000, V = 2 m³. Massa?",
-        "options": ["500", "2000", "1000", "3000"],
-        "answer": "2000"
-      },
-      {
-        "question": "m = 10 kg, g ≈ 10. Og‘irlik kuchi?",
-        "options": ["10N", "50N", "100N", "200N"],
-        "answer": "100N"
-      },
-      {
-        "question": "ρ = 500, m = 1000 kg. Hajm?",
-        "options": ["2m³", "5m³", "10m³", "1m³"],
-        "answer": "2m³"
-      },
-      {
-        "question": "m = 5 kg, g = 10. Og‘irlik?",
-        "options": ["5N", "10N", "50N", "100N"],
-        "answer": "50N"
-      },
-      {
-        "question": "ρ = 800, V = 1 m³. Massa?",
-        "options": ["800", "80", "8", "1600"],
-        "answer": "800"
-      },
-      {
-        "question": "2000 kg massali jism og‘irligi? (g=10)",
-        "options": ["2000N", "1000N", "20000N", "500N"],
-        "answer": "20000N"
-      },
-      {
-        "question": "ρ = 1000, m = 500. Hajm?",
-        "options": ["0,5", "5", "1", "2"],
-        "answer": "0,5"
-      },
-      {
-        "question": "ρ = 2, V = 3. Massa?",
-        "options": ["5", "6", "7", "8"],
-        "answer": "2000"
-      },
-      {
-        "question": "m = 1 kg. Og‘irlik? (g=10)",
-        "options": ["1N", "5N", "10N", "20N"],
-        "answer": "20N"
-      }
+      {"question": "2x=10, x=?", "options": ["2","5","10","20"], "answer": "5"},
+      {"question": "x+7=15", "options": ["6","7","8","9"], "answer": "8"},
+      {"question": "3x=21", "options": ["6","7","8","9"], "answer": "7"},
+      {"question": "2x+4=12", "options": ["2","3","4","5"], "answer": "4"},
+      {"question": "x/5=6", "options": ["25","30","35","40"], "answer": "30"},
+      {"question": "4x-8=0", "options": ["1","2","3","4"], "answer": "2"},
+      {"question": "5x=45", "options": ["5","6","7","9"], "answer": "9"},
+      {"question": "x-9=3", "options": ["10","11","12","13"], "answer": "12"},
+      {"question": "2(x+3)=14", "options": ["4","5","6","7"], "answer": "4"},
+      {"question": "3x+6=0", "options": ["-2","2","-3","3"], "answer": "-2"}
     ],
     "3-chorak": [
-      {
-        "question": "F = 10 N, S = 2 m². Bosim?",
-        "options": ["5Pa", "10Pa", "20Pa", "2Pa"],
-        "answer": "5Pa"
-      },
-      {
-        "question": "F = 20 N, s = 5 m. Ish?",
-        "options": ["25J", "50J", "100J", "10J"],
-        "answer": "100J"
-      },
-      {
-        "question": "F = 100 N, S = 10. Bosim?",
-        "options": ["5", "10", "20", "50"],
-        "answer": "10"
-      },
-      {
-        "question": "A = 200 J, s = 10 m. Kuch?",
-        "options": ["20N", "10N", "5N", "50N"],
-        "answer": "20N"
-      },
-      {
-        "question": "F = 50 N, s = 2 m. Ish?",
-        "options": ["100J", "50J", "25J", "10J"],
-        "answer": "100J"
-      },
-      {
-        "question": "F = 30 N, S = 3. Bosim?",
-        "options": ["10Pa", "5Pa", "15Pa", "20Pa"],
-        "answer": "10Pa"
-      },
-      {
-        "question": "A = 60 J, F = 10 N. Yo‘l?",
-        "options": ["6m", "5m", "10m", "3m"],
-        "answer": "6m"
-      },
-      {
-        "question": "F = 80 N, s = 1 m. Ish?",
-        "options": ["80J", "40J", "20J", "10J"],
-        "answer": "80J"
-      },
-      {
-        "question": "F = 100 N, S = 5. Bosim?",
-        "options": ["10", "20", "5", "50"],
-        "answer": "20"
-      },
-      {
-        "question": "A = 150 J, s = 5. Kuch?",
-        "options": ["10", "20", "30", "50"],
-        "answer": "30"
-      }
+      {"question": "Uchburchak burchaklari yig'indisi?", "options": ["90","180","270","360"], "answer": "180"},
+      {"question": "To‘g‘ri burchak?", "options": ["45","60","90","120"], "answer": "90"},
+      {"question": "P=24 kvadrat tomoni?", "options": ["4","5","6","7"], "answer": "6"},
+      {"question": "To‘g‘ri to‘rtburchak yuzasi?", "options": ["a+b","a×b","2(a+b)","a²"], "answer": "a×b"},
+      {"question": "R=7, diametr?", "options": ["7","14","21","28"], "answer": "14"},
+      {"question": "Parallelogram yuzasi?", "options": ["a×h","a+b","a²","2a"], "answer": "a×h"},
+      {"question": "P=20 kvadrat yuza?", "options": ["16","25","36","20"], "answer": "25"},
+      {"question": "Teng tomonli uchburchak burchagi?", "options": ["30","45","60","90"], "answer": "60"},
+      {"question": "Kvadrat diagonali?", "options": ["a√2","a²","2a","a/2"], "answer": "a√2"},
+      {"question": "Doira formulasi πr^2 nimani beradi?", "options": ["uzunlik","yuzasi","diametr","radius"], "answer": "yuzasi"}
     ],
     "4-chorak": [
-      {
-        "question": "Tenglamani yeching: v = v0 + at, agar v0=0, a=2 m/s², t=5 s",
-        "options": ["v=5 m/s", "v=10 m/s", "v=15 m/s", "v=20 m/s"],
-        "answer": "v=10 m/s"
-      }
+      {"question": "3/4+1/4", "options": ["1","2","3/4","1/2"], "answer": "1"},
+      {"question": "5/6-1/6", "options": ["4/6","3/6","2/6","1/6"], "answer": "4/6"},
+      {"question": "2/3×3/4", "options": ["1/2","1","2/3","3/4"], "answer": "1/2"},
+      {"question": "4/5÷2/5", "options": ["2","1","4","5"], "answer": "2"},
+      {"question": "0.5=", "options": ["1/2","1/3","2/3","3/4"], "answer": "1/2"},
+      {"question": "25%=", "options": ["1/4","1/2","1/5","1/10"], "answer": "1/4"},
+      {"question": "0.25=", "options": ["1/2","1/4","1/5","1/3"], "answer": "1/4"},
+      {"question": "3/5=", "options": ["0.6","0.3","0.5","0.8"], "answer": "0.6"},
+      {"question": "1.2=", "options": ["6/5","5/6","12/10","3/2"], "answer": "6/5"},
+      {"question": "0.75=", "options": ["3/4","2/3","1/2","1/3"], "answer": "3/4"}
+    ]
+  },
+
+  "Fizika": {
+    "1-chorak": [
+      {"question": "72 km/soat = ? m/s", "options": ["10","15","20","25"], "answer": "20"},
+      {"question": "2 soatda 120 km yo‘l. v=?", "options": ["40","50","60","70"], "answer": "60"},
+      {"question": "10 m/s, 30 s. s=?", "options": ["100","200","300","400"], "answer": "300"},
+      {"question": "500 m, 25 s. v=?", "options": ["10","20","25","30"], "answer": "20"},
+      {"question": "15 m/s, 2 min. s=?", "options": ["900","1200","1500","1800"], "answer": "1800"},
+      {"question": "36 km/h = ?", "options": ["5","10","15","20"], "answer": "10"},
+      {"question": "v=5 m/s, s=100 m. t=?", "options": ["10","20","25","30"], "answer": "20"},
+      {"question": "Yo‘lning yarmini 10, yarmini 20 m/s. v_o‘rtacha?", "options": ["12","13.3","15","16"], "answer": "13.3"},
+      {"question": "200 m, 10 s. v=?", "options": ["10","15","20","25"], "answer": "20"},
+      {"question": "90 km/h = ?", "options": ["20","25","30","35"], "answer": "25"}
+    ],
+    "2-chorak": [
+      {"question": "m=10 kg, g=10. F=?", "options": ["10","50","100","200"], "answer": "100"},
+      {"question": "ρ=1000, V=2. m=?", "options": ["1000","1500","2000","2500"], "answer": "2000"},
+      {"question": "m=500, ρ=1000. V=?", "options": ["0.5","1","2","5"], "answer": "0.5"},
+      {"question": "m=5 kg. F=?", "options": ["5","25","50","100"], "answer": "50"},
+      {"question": "ρ=800, V=3. m=?", "options": ["2400","1600","800","400"], "answer": "2400"},
+      {"question": "m=2000 kg. F=?", "options": ["2000","10000","20000","5000"], "answer": "20000"},
+      {"question": "ρ=2, V=4. m=?", "options": ["6","7","8","9"], "answer": "8"},
+      {"question": "m=1000, V=1. ρ=?", "options": ["500","800","1000","1200"], "answer": "1000"},
+      {"question": "m=2 kg. F=?", "options": ["10","20","30","40"], "answer": "20"},
+      {"question": "ρ=500, m=1000. V=?", "options": ["2","5","10","1"], "answer": "2"}
+    ],
+    "3-chorak": [
+      {"question": "F=20N, s=5m. A=?", "options": ["50","100","150","200"], "answer": "100"},
+      {"question": "F=100, S=5. P=?", "options": ["10","20","25","50"], "answer": "20"},
+      {"question": "A=200, s=10. F=?", "options": ["10","20","30","40"], "answer": "20"},
+      {"question": "F=50, s=2. A=?", "options": ["50","100","150","200"], "answer": "100"},
+      {"question": "F=30, S=3. P=?", "options": ["5","10","15","20"], "answer": "10"},
+      {"question": "A=60, F=10. s=?", "options": ["4","5","6","7"], "answer": "6"},
+      {"question": "F=80, s=1. A=?", "options": ["80","40","20","10"], "answer": "80"},
+      {"question": "F=200, S=10. P=?", "options": ["10","20","30","40"], "answer": "20"},
+      {"question": "A=150, s=5. F=?", "options": ["10","20","30","40"], "answer": "30"},
+      {"question": "F=10, s=0. A=?", "options": ["0","10","20","30"], "answer": "0"}
+    ],
+    "4-chorak": [
+      {"question": "1 kg suv, 10°C. Q?", "options": ["4200","42000","8400","21000"], "answer": "42000"},
+      {"question": "2 kg, 5°C. Q?", "options": ["42000","84000","21000","10000"], "answer": "42000"},
+      {"question": "3 kg, 10°C. Q?", "options": ["42000","84000","126000","21000"], "answer": "126000"},
+      {"question": "1 kg, 1°C. Q?", "options": ["4200","1000","2000","3000"], "answer": "4200"},
+      {"question": "5 kg, 2°C. Q?", "options": ["42000","84000","21000","10000"], "answer": "42000"},
+      {"question": "2 kg, 10°C. Q?", "options": ["42000","84000","10000","20000"], "answer": "84000"},
+      {"question": "4 kg, 5°C. Q?", "options": ["84000","42000","10000","20000"], "answer": "84000"},
+      {"question": "Δt=15°C", "options": ["10","15","20","25"], "answer": "15"},
+      {"question": "c suv?", "options": ["4200","1000","500","2000"], "answer": "4200"},
+      {"question": "Q formulasi?", "options": ["mcΔt","m/V","F/S","A=Fs"], "answer": "mcΔt"}
+    ]
+  },
+
+  "Ingliz tili": {
+    "1-chorak": [
+      {"question": "Present Simple qaysi?", "options": ["I go","I went","I going","I will go"], "answer": "I go"},
+      {"question": "He ___ a student.", "options": ["is","are","am","be"], "answer": "is"},
+      {"question": "They ___ playing.", "options": ["is","are","am","be"], "answer": "are"},
+      {"question": "I ___ a book.", "options": ["has","have","is","are"], "answer": "have"},
+      {"question": "She ___ to school.", "options": ["go","goes","going","gone"], "answer": "goes"},
+      {"question": "Do you ___ English?", "options": ["speak","speaks","speaking","spoke"], "answer": "speak"},
+      {"question": "We ___ football.", "options": ["play","plays","playing","played"], "answer": "play"},
+      {"question": "He ___ TV.", "options": ["watch","watches","watching","watched"], "answer": "watches"},
+      {"question": "I ___ not understand.", "options": ["do","does","am","is"], "answer": "do"},
+      {"question": "She ___ not like apples.", "options": ["do","does","is","are"], "answer": "does"}
+    ],
+    "2-chorak": [
+      {"question": "Past Simple of go?", "options": ["went","gone","goes","going"], "answer": "went"},
+      {"question": "I ___ a book yesterday.", "options": ["read","reads","reading","will read"], "answer": "read"},
+      {"question": "They ___ football.", "options": ["played","play","playing","plays"], "answer": "played"},
+      {"question": "He ___ home.", "options": ["went","go","goes","going"], "answer": "went"},
+      {"question": "We ___ dinner.", "options": ["had","have","has","having"], "answer": "had"},
+      {"question": "She ___ TV.", "options": ["watched","watch","watching","watches"], "answer": "watched"},
+      {"question": "I ___ school.", "options": ["finished","finish","finishing","finishes"], "answer": "finished"},
+      {"question": "They ___ late.", "options": ["were","are","is","was"], "answer": "were"},
+      {"question": "He ___ happy.", "options": ["was","were","are","be"], "answer": "was"},
+      {"question": "We ___ there.", "options": ["were","was","is","be"], "answer": "were"}
+    ],
+    "3-chorak": [
+      {"question": "Future Simple?", "options": ["will go","went","go","going"], "answer": "will go"},
+      {"question": "I ___ go tomorrow.", "options": ["will","am","is","are"], "answer": "will"},
+      {"question": "She ___ come.", "options": ["will","is","are","was"], "answer": "will"},
+      {"question": "They ___ play.", "options": ["will","was","is","are"], "answer": "will"},
+      {"question": "We ___ travel.", "options": ["will","were","is","are"], "answer": "will"},
+      {"question": "He ___ study.", "options": ["will","was","is","are"], "answer": "will"},
+      {"question": "I ___ help you.", "options": ["will","am","is","are"], "answer": "will"},
+      {"question": "She ___ be late.", "options": ["will","is","was","are"], "answer": "will"},
+      {"question": "They ___ win.", "options": ["will","are","is","was"], "answer": "will"},
+      {"question": "We ___ succeed.", "options": ["will","were","is","are"], "answer": "will"}
+    ],
+    "4-chorak": [
+      {"question": "Comparative of big?", "options": ["bigger","biggest","more big","big"], "answer": "bigger"},
+      {"question": "Superlative of tall?", "options": ["tallest","taller","more tall","tall"], "answer": "tallest"},
+      {"question": "Good comparative?", "options": ["better","gooder","best","more good"], "answer": "better"},
+      {"question": "Bad superlative?", "options": ["worst","badder","worse","more bad"], "answer": "worst"},
+      {"question": "Fast comparative?", "options": ["faster","fastest","more fast","fast"], "answer": "faster"},
+      {"question": "Small superlative?", "options": ["smallest","smaller","more small","small"], "answer": "smallest"},
+      {"question": "Happy comparative?", "options": ["happier","happiest","more happy","happy"], "answer": "happier"},
+      {"question": "Cold superlative?", "options": ["coldest","colder","more cold","cold"], "answer": "coldest"},
+      {"question": "Easy comparative?", "options": ["easier","easiest","more easy","easy"], "answer": "easier"},
+      {"question": "Hot superlative?", "options": ["hottest","hotter","more hot","hot"], "answer": "hottest"}
     ]
   }
 }
