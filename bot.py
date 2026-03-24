@@ -5,6 +5,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
+# Token environment’dan olinadi
 TOKEN = "8715707489:AAHRQEmB-v977wIUWtNIgrAtnnfsX0fFP0g"
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -45,34 +46,27 @@ async def handle_message(message: types.Message):
     user_id = message.from_user.id
     text = message.text
 
-    # Ortga qaytish
     if text == "◀️ Ortga qaytish":
-        # Agar foydalanuvchi hali fan tanlamagan bo‘lsa
         if user_id not in user_state or "subject" not in user_state[user_id]:
             await message.answer("📚 Fan tanlang:", reply_markup=subject_menu())
-        # Agar fan tanlangan bo‘lsa, chorak menyusiga qaytadi
         elif "quarter" not in user_state[user_id]:
             subject = user_state[user_id]["subject"]
             await message.answer("📖 Chorak tanlang:", reply_markup=quarter_menu(subject))
-        # Agar chorak tanlangan bo‘lsa, testni boshlash menyusiga qaytadi
         else:
             await message.answer("✅ Tayyor bo‘lsang, testni boshlash tugmasini bos!", reply_markup=start_quiz_menu())
         return
 
-    # Fan tanlash
     if text in questions.keys():
         user_state[user_id] = {"subject": text, "score": 0, "index": 0}
         await message.answer("📖 Chorak tanlang:", reply_markup=quarter_menu(text))
         return
 
-    # Chorak tanlash
     if user_id in user_state and text in questions[user_state[user_id]["subject"]].keys():
         user_state[user_id]["quarter"] = text
         user_state[user_id]["chat_id"] = message.chat.id
         await message.answer("✅ Tayyor bo‘lsang, testni boshlash tugmasini bos!", reply_markup=start_quiz_menu())
         return
 
-    # Testni boshlash
     if text == "🚀 Testni boshlash":
         chat_id = user_state[user_id]["chat_id"]
         await send_question(chat_id, user_id)
@@ -87,7 +81,7 @@ async def send_question(chat_id, user_id):
     q_list = questions[subject][quarter]
     if index < len(q_list):
         q = q_list[index]
-        poll = await bot.send_poll(
+        await bot.send_poll(
             chat_id=chat_id,
             question=q["question"],
             options=q["options"],
@@ -95,7 +89,6 @@ async def send_question(chat_id, user_id):
             correct_option_id=q["options"].index(q["answer"]),
             is_anonymous=True
         )
-        state["last_poll_id"] = poll.poll.id
     else:
         await bot.send_message(chat_id, f"🏁 Test tugadi!\nNatija: {state['score']} / {len(q_list)}")
         await bot.send_message(chat_id, "📚 Yana fan tanlang:", reply_markup=subject_menu())
