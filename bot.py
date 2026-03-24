@@ -4,11 +4,19 @@ import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from flask import Flask
 
 # Token environment’dan olinadi
 TOKEN = "8715707489:AAHRQEmB-v977wIUWtNIgrAtnnfsX0fFP0g"
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
+
+# Flask app (Render portni ko‘rishi uchun)
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Telegram quiz bot is running!"
 
 # Savollarni JSON’dan o‘qish
 with open("questions.json", "r", encoding="utf-8") as f:
@@ -121,4 +129,7 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    loop = asyncio.get_event_loop()
+    loop.create_task(main())
+    # Flask serverni ishga tushiramiz (Render portni ko‘rishi uchun)
+    app.run(host="0.0.0.0", port=10000)
